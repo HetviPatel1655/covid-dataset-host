@@ -1,14 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>COVID Dataset</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>COVID-19 Dataset Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      max-width: 600px;
+      width: 90%;
+      padding: 40px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .dataset-link {
+      display: inline-block;
+      background-color: #3498db;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .dataset-link:hover {
+      background-color: #1d6fa5;
+    }
+
+    .emoji {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Coronavirus Cases Dataset</h1>
-  <p>Click below to download the dataset used in our regression project:</p>
-  <a href="https://drive.google.com/uc?id=1KGKVyCDp3U2pnXqROMolc5EmRgup0tkp&export=download" download>
-    Download COVID-19 Dataset
-  </a>
+
+  <div class="card">
+    <div class="emoji">🦠📊</div>
+    <h1>COVID-19 Dataset Portal</h1>
+    <p>Click below to access the latest COVID-19 dataset used in our predictive analysis.</p>
+    <div id="dataset-section">
+      <a href="https://drive.google.com/uc?id=1KGKVyCDp3U2pnXqROMolc5EmRgup0tkp&export=download" class="dataset-link">📥 Download Dataset</a>
+    </div>
+  </div>
+
 </body>
 </html>
